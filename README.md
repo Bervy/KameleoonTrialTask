@@ -4,7 +4,7 @@ Project requirements:
 
 * source code should be published on https://github.com/
 * Docker image should be published on https://hub.docker.com/
-* a working app should be deployed and be publicly available on https://www.heroku.com/
+* project should have docker-compose.yaml for local deploy, OR you can deploy it on a public hosting provider (Heroku, etc);
 * use any in-memory database (Derby, H2, SQLite)
 * use Java and Spring Boot
 
