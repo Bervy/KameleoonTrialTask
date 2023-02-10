@@ -10,11 +10,6 @@
     <artifactId>main-server</artifactId>
     <modelVersion>4.0.0</modelVersion>
 
-    <properties>
-        <maven.compiler.source>11</maven.compiler.source>
-        <maven.compiler.target>11</maven.compiler.target>
-        <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
-    </properties>
     <dependencies>
         <dependency>
             <groupId>org.springframework.boot</groupId>
@@ -30,6 +25,7 @@
             <artifactId>spring-test</artifactId>
         </dependency>
     </dependencies>
+
     <build>
         <plugins>
             <plugin>

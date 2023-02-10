@@ -2,7 +2,7 @@ version: '3.8'
 services:
   kameleoon:
     build: main server
-    container_name: kameleoon_main_server_container
+    container_name: kameleoon-main-server-container
     ports:
       - "8080:8080"
     depends_on:
@@ -12,7 +12,7 @@ services:
 
   main-server-db:
     image: postgres:13.7-alpine
-    container_name: main-server-db_container
+    container_name: kameleoon-main-server-db_container
     ports:
       - "6542:5432"
     environment:

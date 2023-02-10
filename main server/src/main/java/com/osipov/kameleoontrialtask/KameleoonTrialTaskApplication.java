@@ -9,5 +9,4 @@ public class KameleoonTrialTaskApplication {
     public static void main(String[] args) {
         SpringApplication.run(KameleoonTrialTaskApplication.class, args);
     }
-
 }

@@ -25,7 +25,7 @@ public class ErrorHandler {
             MethodArgumentNotValidException.class,
             InvalidParameterException.class,
             MissingServletRequestParameterException.class,
-            MethodArgumentNotValidException.class, BadRequestException.class
+            MethodArgumentNotValidException.class
     })
     @ResponseStatus(HttpStatus.BAD_REQUEST)
     public ErrorMessage handleBadRequest(final Exception e) {
@@ -40,12 +40,6 @@ public class ErrorHandler {
     @ExceptionHandler({ConflictException.class})
     @ResponseStatus(HttpStatus.CONFLICT)
     public ErrorResponse handleDoubleData(final Exception e) {
-        return new ErrorResponse(e.getMessage());
-    }
-
-    @ExceptionHandler({AccessDeniedException.class})
-    @ResponseStatus(HttpStatus.FORBIDDEN)
-    public ErrorResponse handleForbidden(final Exception e) {
         return new ErrorResponse(e.getMessage());
     }
 

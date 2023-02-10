@@ -1,8 +1,7 @@
 package com.osipov.kameleoontrialtask.repository;
 
-import com.osipov.kameleoontrialtask.model.User;
+import com.osipov.kameleoontrialtask.model.user.User;
 import org.springframework.data.jpa.repository.JpaRepository;
 
 public interface UserRepository extends JpaRepository<User, Long> {
-
 }
